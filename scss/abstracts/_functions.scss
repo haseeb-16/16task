@@ -1,0 +1,13 @@
+
+@use "sass:map";
+@use "variables" as vars;
+
+// Get a color from the color map.
+@function color($name) {
+    @return map.get(vars.$colors, $name);
+}
+
+// Convert pixels to rem.
+@function rem($pixels) {
+    @return ($pixels / 16) * 1rem;
+}

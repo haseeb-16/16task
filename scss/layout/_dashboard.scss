@@ -1,0 +1,66 @@
+
+@use "../abstracts/variables" as vars;
+
+.dashboard {
+    min-height: 100vh;
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: vars.$sidebar-width minmax(0, 1fr);
+    }
+
+    &__main {
+        min-width: 0;
+        padding: clamp(1rem, 3vw, 2rem);
+    }
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__user {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #4f46e5;
+        color: white;
+    }
+}
+
+.page-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-size: clamp(1.7rem, 4vw, 2.5rem);
+    }
+
+    &__eyebrow {
+        color: var(--color-muted);
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+    }
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}

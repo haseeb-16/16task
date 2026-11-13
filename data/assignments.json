@@ -1,0 +1,45 @@
+
+[
+    {
+        "id": 1,
+        "title": "HTML Fundamentals",
+        "dueDate": "2026-11-05",
+        "progress": 100,
+        "status": "Completed"
+    },
+    {
+        "id": 2,
+        "title": "CSS Responsive Design",
+        "dueDate": "2026-11-08",
+        "progress": 100,
+        "status": "Completed"
+    },
+    {
+        "id": 3,
+        "title": "JavaScript Fundamentals",
+        "dueDate": "2026-11-15",
+        "progress": 65,
+        "status": "In Progress"
+    },
+    {
+        "id": 4,
+        "title": "Modern JavaScript",
+        "dueDate": "2026-11-18",
+        "progress": 40,
+        "status": "In Progress"
+    },
+    {
+        "id": 5,
+        "title": "Internship Portal",
+        "dueDate": "2026-11-22",
+        "progress": 0,
+        "status": "Pending"
+    },
+    {
+        "id": 6,
+        "title": "Final Project",
+        "dueDate": "2026-11-28",
+        "progress": 0,
+        "status": "Pending"
+    }
+]

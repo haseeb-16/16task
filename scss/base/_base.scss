@@ -1,0 +1,43 @@
+
+@use "../abstracts/functions" as fn;
+
+:root {
+    --color-primary: #{fn.color("primary")};
+    --color-background: #{fn.color("background")};
+    --color-surface: #{fn.color("surface")};
+    --color-text: #{fn.color("text")};
+    --color-muted: #{fn.color("muted")};
+    --color-border: #{fn.color("border")};
+
+    --radius-md: 12px;
+    --shadow-card: 0 4px 18px rgba(15, 23, 42, 0.05);
+
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+
+    --font-body: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    min-width: 320px;
+}
+
+body.dark-theme {
+    --color-background: #111827;
+    --color-surface: #1f2937;
+    --color-text: #f8fafc;
+    --color-muted: #cbd5e1;
+    --color-border: #374151;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+a:focus-visible {
+    outline: 3px solid #818cf8;
+    outline-offset: 3px;
+}

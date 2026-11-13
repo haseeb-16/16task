@@ -1,0 +1,39 @@
+
+@use "../abstracts/mixins" as mix;
+
+.summary-card,
+.panel {
+    @include mix.card;
+    padding: 1.25rem;
+}
+
+.summary-card {
+    min-width: 0;
+
+    p {
+        color: var(--color-muted);
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        margin: 0.5rem 0;
+    }
+
+    span {
+        font-size: 0.85rem;
+        color: var(--color-muted);
+    }
+}
+
+.panel {
+    margin-bottom: 2rem;
+    min-width: 0;
+
+    &__heading {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
